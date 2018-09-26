@@ -1,0 +1,79 @@
+- var nav = ['Home','About','Article','Contact'];
+doctype html
+html
+	head
+		title Entreprise Lambda
+		meta(charset="utf-8")
+		link(rel="stylesheet", href="../assets/stylesheets/style.css")
+		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css")
+	body
+		.wrapper
+			.upper
+				.logo
+					span.title-first Barak
+					span.title-last OBAMA
+				.link-logo-nav
+				.nav
+					ul
+						each cat in nav
+							li.cat 
+								a #{cat}
+				.link-nav-end
+			.middle
+				main.main
+					section.first-s
+						.cards
+							article.card
+								.card-bg
+								.card-content
+									span.label Article 1
+									span.title Balise img
+									p.description
+										img(src="../assets/img/html5.gif" usemap="html5")
+										map(name="html5")
+											area(shape="rect" coords="0,50,0,20")
+							article.card
+								.card-bg
+								.card-content
+									span.label Article 2
+									span.title Logos
+									p.description 
+										img(src="../assets/img/logos.png")
+					section.second-s
+						.cards
+							article.card
+								.card-bg
+								.card-content
+									span.label Article 1
+									span.title media query
+									p.description
+										picture
+											source(srcset="../assets/img/ordinateur.png")
+							article.card
+				aside.sb
+					div.pres
+						img(src="../assets/img/barak.jpg" class="img")
+						h1 Barack Obama
+						p Né le ??/??/??
+						div.adr
+							h5 Adresse:
+							span ?? rue ?? ?? en amerique très amérique
+						div.num
+							img.phone(src="../assets/img/phone.png")
+							span 01 23 45 67 89
+						div.mail
+							h5 mail:
+							span Adresse@email.lol
+						div.ace
+							h5 Atouts:
+							ul
+								li polyvalent
+								li consciencieux
+								li deductif
+			.footer
+		script(src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
+		script(src='https://rawgit.com/RickStrahl/jquery-resizable/master/src/jquery-resizable.js')
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/animateplus/1.4.0/animate.js')
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/core-js/1.1.3/core.min.js')
+		script(src="../assets/javascript/resize.js")
+		script(src="../assets/javascript/index.js")
